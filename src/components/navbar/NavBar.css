@@ -1,0 +1,18 @@
+.navbar{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(172, 172, 255);
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-links {
+    padding-left: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
