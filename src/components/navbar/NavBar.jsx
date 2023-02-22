@@ -1,28 +1,28 @@
-/*importaciones*/
+/*import*/
 import React from 'react';
 import './NavBar.css';
-import Brand from '../brand/Brand.jsx'
+import Brand from '../brand/Brand.jsx';
 import CartWidget from '../cartWidget/CartWidget';
-
+import { Link } from "react-router-dom";
+import ItemListContainer from '../itemListContainer/ItemListContainer';
 
 const NavBar = () => {
   return (
     <navbar className="navbar">
       <div>
-        <Brand />
+      <Link to={"/"}><Brand /></Link>
       </div>
       <div>
         <ul className="navbar-links">
-          <li><a href="#">Categorías</a></li>
-          <li><a href="#">Ofertas</a></li>
+        <Link to={"/catalogo"}><li>Catálogo</li></Link>
         </ul>
       </div>
       <div>
-        <CartWidget />
+        <Link to={"/carrito"}><CartWidget /></Link>
       </div>
     </navbar>
   )
 }
 
-/*exportación*/
+/*export*/
 export default NavBar

@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "El amor en los tiempos del cólera",
+        "description": "Lorem ipsum",
+        "stock": 10,
+        "price": 299.99,
+        "category": "realismo mágico" 
+    },
+
+    {
+        "id": 2,
+        "name": "Crónica de una muerte anunciada",
+        "description": "Lorem ipsum",
+        "stock": 10,
+        "price": 350,
+        "category": "realismo mágico"
+    },
+
+
+    {
+        "id": 3,
+        "name": "El resplandor",
+        "description": "Lorem ipsum",
+        "stock": 10,
+        "price": 500,
+        "category": "terror"
+    },
+
+    {
+        "id": 4,
+        "name": "Sherlock Holmes",
+        "description": "Lorem ipsum",
+        "stock": 10,
+        "price": 450,
+        "category": "detectives"
+    },
+
+    {
+        "id": 5,
+        "name": "1984",
+        "description": "Lorem ipsum",
+        "stock": 10,
+        "price": 120,
+        "category": "distopia"
+    }
+]

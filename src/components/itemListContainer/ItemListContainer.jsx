@@ -1,15 +1,20 @@
-/*importaciones*/
-import React from 'react'
+/*import*/
+import { useState, useEffect } from "react";
+import ItemList from "../itemList/ItemList.jsx";
+import Data from "../../data.json";
+import { useParams } from "react-router-dom";
 
 
-
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
+  const { category } = useParams();
+  const catFilter = Data.filter((products) => product.category === category);
   return (
-    <div>{greeting}</div>
-  )
-}
+    <div>
+      <h2>Prueba</h2>
+      {category ? <ItemList products={catFilter} /> : <ItemList products={Data} />}
+    </div>
+  );
+};
 
-
-
-/*importaciones*/
-export default ItemListContainer
+/*export*/
+export default ItemListContainer;
